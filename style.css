@@ -1,0 +1,23 @@
+h1 {
+    font-size: 43px;
+    text-align: center;
+    margin: 0;
+    padding-top: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+} 

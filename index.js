@@ -1,16 +1,17 @@
 "use strict";
 
-function createCountr() {
-    let counter = 0;
+const table = document.createElement('table');
+const rows = 10;
+const cols = 10;
 
-    const myFunction = function(sum) {
-        counter += sum;
-        return counter;
+for (let i = 0; i < rows; i++) {
+    const row = document.createElement('tr');
+
+    for (let j = 0; j < cols; j++) {
+        const square = document.createElement('td');
+        square.textContent = (i + 1) * (j + 1);
+        row.appendChild(square);
     }
-    return myFunction;
+    table.appendChild(row);
 }
-
-const increment = createCountr();
-console.log(increment(3));
-console.log(increment(5));
-console.log(increment(20));
+document.body.appendChild(table);
